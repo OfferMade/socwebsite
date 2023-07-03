@@ -9,210 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <style>
-    *{
-        box-sizing: content-box;
-    }
-    html{
-        scroll-behavior: smooth;
-    }
-    body{
-        margin: 0;
-        background-color: #0D7377;
-    }
-    .main-header{
-        background-color: #212121;
-        margin: 0;
-        text-align: left;
-        padding: 16px;
-        padding: 8px 16px;
-        position: fixed;
-        z-index: 1;
-        width: 100%;
-        top: 0;
-        
-    }
-    .main-header__logo{
-        color: #14FFEC;
-        font-size: 35px;
-        text-decoration: none;
-        font-family: 'Teko', sans-serif;
-    }
-    .main-nav{
-        text-align: right;
-        display: inline-block;
-        width: calc(100% - 300px);
-
-    }
-    .main-nav__items{
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        
-    }
-    .main-nav__item{
-        margin: 0 10px;
-        display: inline-block;
-    }
-    #resim{
-        background: url(soc.jpg);
-        height: 450px;
-        width: 100%;
-        display:inline-block;
-        background-position: center bottom;
-        background-attachment: fixed;
-        margin-bottom: 0;
-    }
-    .first{
-        margin-bottom: -4px;
-    }
-    #baslik{
-        background-color: #212121;
-        color: #14FFEC;
-        text-align: center;
-        margin: 0;
-        padding: 10px;
-        font-family: 'Teko', sans-serif;
-        letter-spacing: 2px;
-        
-    }
-    .features{
-        
-    }
-    .feature{
-        color: #fff;
-        background-color: #323232;
-        width: 30%;
-        height: 300px;
-        margin: 5px;
-        padding: 5px;
-        float: left;
-        text-align: center;
-    }
-    .clearfix::after{
-        content: "";
-        display: block;
-        clear: both;
-    }
-    .container{
-
-        width: 1000px;
-        margin: 0 auto;
-        height: 300px;
-        
-    }
-    .inner-feature{
-        padding: 15px;
-        font-family: 'Teko', sans-serif;
-        font-size: 20px;
-    }
-    .wide__left1{
-        background: url(fire.png);
-        background-size: cover;
-        background-position: center;
-        
-    }
-    .wide__right1{
-        background-color: #14FFEC;
-        padding: 40px;
-        vertical-align: top;
-        font-family: 'Teko', sans-serif;
-    }
-    .col-2{
-        display: inline-block;
-        width: calc(50% - 12px);
-        height: 350px;
-        vertical-align: top;
-        padding: 5px;
-        margin: 0;
-        
-    }
-    .col-2 p{
-        padding-left: 25px;
-        font-size: 25px;
-    }
-    .wide__right1 h2{
-        font-size: 26px;
-        padding-left: 25px;
-        font-family: 'Teko', sans-serif;
-    }
-    .wide__left2{
-        background: url(halo.png);
-        background-size: cover;
-        background-position: center;
-    }
-    .wide__right2{
-        background-color: #14FFEC;
-        vertical-align: top;
-        font-family: 'Teko', sans-serif;
-    }
-    .wide__right2 h2{
-        font-size: 26px;
-        padding-left: 25px;
-        
-    }
-    .wide__row{
-        padding-bottom: 5px;
-    }
-    .wide__left3{
-        background: url(base.png);
-        background-size: cover;
-        background-position: center;
-        
-    }
-    .wide__right3{
-        background-color: #14FFEC;
-        vertical-align: top;
-        font-family: 'Teko', sans-serif;
-    }
-    .wide__right3 h2{
-        font-size: 26px;
-        padding-left: 25px;
-    }
-    .wide{
-        margin: 0;
-        display: inline-block;
-    }
-    #DC{
-        color: #14FFEC;
-    }
-    #ST{
-        color: #14FFEC;
-    }
-    #YT{
-        color: #14FFEC;
-    }
-    #backtotop{
-        position: fixed;
-        bottom: 10px;
-        right: 10px;
-    }
-    #backtotop i{
-        font-size: 45px;
-        color: #0D7377;
-    }
-    .footer{
-        margin-top: -5px;
-        background-color: #212121;
-        padding: 1px 5px;
-        text-align: center;
-    }
-    #soc-alt-yazi{
-        text-align: center;
-        font-family: 'Teko', sans-serif;
-        color: #0D7377;
-        font-size: 25px;
-    }
-    #offer-alt-yazi{
-        text-align: center;
-        font-family: 'Teko', sans-serif;
-        color: #0D7377;
-        text-decoration: none;
-    }
-    #egitimler-link{
-        color: #14FFEC;
-    }
+    
 </style>
 <body id="body">
     <header class="main-header">
@@ -262,15 +62,15 @@
             <div class="row wide__row">
                 <div class="col-2 wide__left1"></div>
                 <div class="col-2 wide__right1">
-                    <h2>Custom Gear</h2>
-                    <p>Eğitimlerinizi ve SERE sınavınızı tamamladıktan sonra kendinize özel bir adet vest ve helmet tasarlatma hakkı kazanırsınız. Bu teçhizatınızda size özel istediğiniz patchler, istediğiniz aksesuarlar yelek ve kaskınıza sizin istekleriniz doğrultusunda eklenir. Gelecekteki eğitim ve operasyonlarda gerektiğinde teçhizatınızı kullanırsınız.</p>
+                    <a id="custombutton" href="customgear.html"><h2>Custom Gear</h2></a>
+                    <p>Sadece size özel bir teçhizat.  Detaylar için tıklayın!</p>
                 </div>
             </div>
             <div class="row wide__row">
                 <div class="col-2 wide__left2"></div>
                 <div class="col-2 wide__right2">
-                    <h2>SERE</h2>
-                    <p>Eğitim rotasyonunuz sırasında tamamlayacağınız Survival, Evasion, Resistance, Escape sınavıdır. Bu sınav ekibe katılma yolundaki en zorlu sınavdır.Bu sınavı başarıyla tamamlamanız halinde SOC'a katılma yolundaki en büyük basamağı aşmış olursunuz.</p>
+                    <a href="sere.html" id="serelink"><h2>SERE</h2></a>
+                    <p>Eğitim rotasyonu sırasında olacağınız hayatta kalma sınavıdır. Detaylar için tıklayın!</p>
                 </div>
             </div>
             <div class="row wide__row">
