@@ -234,3 +234,10 @@ body{
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0, 0.4);
 }
+
+.hover{
+    transition: all .3s;
+}
+.hover:hover{
+    transform: translateY(-10px);
+}
