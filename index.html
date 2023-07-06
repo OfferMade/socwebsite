@@ -1,95 +1,251 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stealth Observation Crew</title>
-    <link rel="icon" href="SOC.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<style>
+*{
+    box-sizing: content-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    background-color: #0D7377;
+}
+.main-header{
+    background-color: #212121;
+    margin: 0;
+    text-align: left;
+    padding: 16px;
+    padding: 8px 16px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
     
-</style>
-<body id="body">
-    <header class="main-header">
-        <a class="main-header__logo" href="">Stealth Observation Crew</a>
-        <nav class="main-nav">
-            <ul class="main-nav__items">
-                <li class="main-nav__item" style="color: blue;"><a id="DC" href="https://discord.gg/5VQm4fCpkN"><i class="fa-brands fa-discord fa-lg"></i></a></li>
-                <li class="main-nav__item" style="color: white;"><a id="ST" href="https://steamcommunity.com/groups/stealthobservationscrew"><i class="fa-brands fa-steam fa-lg"></i></a></li>
-                <li class="main-nav__item" style="color: red;"><a id="YT" href="https://www.youtube.com/channel/UCGZyYhNqAGfYJSyRdn7dK_w"><i class="fa-brands fa-youtube fa-lg"></i></a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="showcase">
-            <div class="row first">
-                <a id="resim" href="https://discord.gg/5VQm4fCpkN"></a>
-            </div><div class="row second">
-                <h2 id="baslik">Realism Unit</h2>
-            </div>
-            
-        </section>
-        <section id="features">
-            <div class="container clearfix">
-                <div class="feature hover">
-                    <div class="inner-feature">
-                        <h3>Kimiz?</h3>
-                        <p>2021'den bu yana operasyon ve eğitimler gerçekleştiren bir milsim/realism ekibiyiz.</p>
-                    </div>
-                </div>
-                <div class="feature hover">
-                    <div class="inner-feature">
-                        <a href="https://docs.google.com/presentation/d/1jWzhDi3Ry7DzDg-rndM6sIh4Jb4FCKmMpYPWp9Ub9yM/edit?usp=sharing" id="egitimler-link">
-                            <h3>Eğitimler</h3>
-                            </a>
-                            <p>Görevlerde ve tatbikatlarda ihtiyaç duyacağınız tüm eğitimleri SFAS sırasında sizlere gösteriyoruz. Bu sayede görev esnasında bir aksaklık gerçekleşmiyor ve yüksek riskli operasyonlar sorunsuz gerçekleştiriliyor.</p>
-                    </div>
-                </div>
-                <div class="feature hover">
-                    <div class="inner-feature">
-                        <h3>Milsim</h3>
-                        <p>Arma 3'ün imkanları dahilinde MILSIM mantığında askeri simulasyon üzerine etkinliklerimizi gerçekleştiriyoruz.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="wide">
-            <div class="row wide__row hover">
-                <div class="col-2 wide__left1"></div>
-                <div class="col-2 wide__right1">
-                    <a id="custombutton" href="customgear.html"><h2>Custom Gear</h2></a>
-                    <p>Sadece size özel bir teçhizat.  Detaylar için tıklayın!</p>
-                </div>
-            </div>
-            <div class="row wide__row hover">
-                <div class="col-2 wide__left2"></div>
-                <div class="col-2 wide__right2">
-                    <a href="sere.html" id="serelink"><h2>SERE</h2></a>
-                    <p>Eğitim rotasyonu sırasında olacağınız hayatta kalma sınavıdır. Detaylar için tıklayın!</p>
-                </div>
-            </div>
-            <div class="row wide__row hover">
-                <div class="col-2 wide__left3"></div>
-                <div class="col-2 wide__right3">
-                    <h2>Realism</h2>
-                    <p>Ekip olarak Arma 3 platformunda MILSIM çerçevesinde eğitimler ve operasyonlar gerçekleştiriyoruz.</p>
-                </div>
-            </div>
-        </section>
-        <section class="footer">
-            <div class="row footer-ic">
-                <p id="soc-alt-yazi">Stealth Observation Crew © 2021</p>
-                <a href="https://github.com/OfferMade" id="offer-alt-yazi">offermade</a>
-            </div> 
-    </main>
+    
+}
+.main-header__logo{
+    color: #14FFEC;
+    font-size: 35px;
+    text-decoration: none;
+    font-family: 'Teko', sans-serif;
+}
 
-    <a href="#body" id="backtotop">
-        <i class="fa-solid fa-arrow-up fa-lg"></i>
-    </a>
-</body>
-</html>
+.main-nav{
+    text-align: right;
+    display: inline-block;
+    width: calc(100% - 300px);
+    
+}
+
+.main-nav__items{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+.main-nav__item{
+    margin: 0 10px;
+    display: inline-block;
+    transition: all .3s;
+}
+.main-nav__item:hover{
+    transform: translateY(-3px);
+}
+#resim{
+    background: url(soc.jpg);
+    height: 450px;
+    width: 100%;
+    display:inline-block;
+    background-position: center bottom;
+    background-attachment: fixed;
+    margin-bottom: 0;
+}
+.first{
+    margin-bottom: -4px;
+}
+#baslik{
+    background-color: #212121;
+    color: #14FFEC;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    font-family: 'Teko', sans-serif;
+    letter-spacing: 2px;
+    
+}
+.features{
+    
+}
+.feature{
+    color: #fff;
+    background-color: #323232;
+    width: 30%;
+    height: 300px;
+    margin: 5px;
+    padding: 5px;
+    float: left;
+    text-align: center;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.container{
+
+    width: 1000px;
+    margin: 0 auto;
+    height: 300px;
+    
+}
+.inner-feature{
+    padding: 15px;
+    font-family: 'Teko', sans-serif;
+    font-size: 20px;
+}
+.wide__left1{
+    background: url(fire.png);
+    background-size: cover;
+    background-position: center;
+    
+}
+.wide__right1{
+    background-color: #14FFEC;
+    padding: 40px;
+    vertical-align: top;
+    font-family: 'Teko', sans-serif;
+}
+.col-2{
+    display: inline-block;
+    width: calc(50% - 12px);
+    height: 350px;
+    vertical-align: top;
+    padding: 5px;
+    margin: 0;
+    
+}
+.col-2 p{
+    padding-left: 25px;
+    font-size: 25px;
+}
+.wide__right1 h2{
+    font-size: 26px;
+    padding-left: 25px;
+    font-family: 'Teko', sans-serif;
+}
+.wide__left2{
+    background: url(halo.png);
+    background-size: cover;
+    background-position: center;
+}
+.wide__right2{
+    background-color: #14FFEC;
+    vertical-align: top;
+    font-family: 'Teko', sans-serif;
+}
+.wide__right2 h2{
+    font-size: 26px;
+    padding-left: 25px;
+    
+}
+.wide__row{
+    padding-bottom: 5px;
+}
+.wide__left3{
+    background: url(base.png);
+    background-size: cover;
+    background-position: center;
+    
+}
+.wide__right3{
+    background-color: #14FFEC;
+    vertical-align: top;
+    font-family: 'Teko', sans-serif;
+}
+.wide__right3 h2{
+    font-size: 26px;
+    padding-left: 25px;
+}
+.wide{
+    margin: 0;
+    display: inline-block;
+}
+#DC{
+    color: #14FFEC;
+}
+#ST{
+    color: #14FFEC;
+}
+#YT{
+    color: #14FFEC;
+}
+#backtotop{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+#backtotop i{
+    font-size: 45px;
+    color: #0D7377;
+}
+.footer{
+    margin-top: -5px;
+    background-color: #212121;
+    padding: 1px 5px;
+    text-align: center;
+}
+#soc-alt-yazi{
+    text-align: center;
+    font-family: 'Teko', sans-serif;
+    color: #0D7377;
+    font-size: 25px;
+}
+#offer-alt-yazi{
+    text-align: center;
+    font-family: 'Teko', sans-serif;
+    color: #0D7377;
+    text-decoration: none;
+}
+#egitimler-link{
+    color: #14FFEC;
+}
+#custombutton{
+    color: #212121;
+}
+#sol{
+    background: url(fire.png);
+    height: 100vh;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4);
+}
+#custombaslik{
+    background-color: #0D7377;
+    padding: 35px 15px;
+    text-align: center;
+    font-family: 'Teko', sans-serif;
+    color: #14FFEC;
+    font-size: 50px;
+}
+#customyazi{
+    color: #14FFEC;
+    font-size: 35px;
+    font-family: 'Teko', sans-serif;
+    text-align: center;
+    background-color: #323232;
+}
+#serelink{
+    color: #212121;
+}
+#sol-2{
+    background: url(halo.png);
+    background-size: cover;
+    height: 100vh;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4);
+}
+
+.hover{
+    transition: all .3s;
+    
+}
+.hover:hover{
+    transform: translateY(-10px);
+}
