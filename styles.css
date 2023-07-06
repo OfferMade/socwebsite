@@ -19,6 +19,7 @@ body{
     width: 100%;
     top: 0;
     
+    
 }
 .main-header__logo{
     color: #14FFEC;
@@ -26,12 +27,14 @@ body{
     text-decoration: none;
     font-family: 'Teko', sans-serif;
 }
+
 .main-nav{
     text-align: right;
     display: inline-block;
     width: calc(100% - 300px);
-
+    
 }
+
 .main-nav__items{
     margin: 0;
     padding: 0;
@@ -41,6 +44,10 @@ body{
 .main-nav__item{
     margin: 0 10px;
     display: inline-block;
+    transition: all .3s;
+}
+.main-nav__item:hover{
+    transform: translateY(-3px);
 }
 #resim{
     background: url(soc.jpg);
@@ -237,6 +244,7 @@ body{
 
 .hover{
     transition: all .3s;
+    
 }
 .hover:hover{
     transform: translateY(-10px);
