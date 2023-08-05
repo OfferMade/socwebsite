@@ -1,6 +1,7 @@
 *{
     box-sizing: content-box;
 }
+
 html{
     scroll-behavior: smooth;
 }
@@ -264,6 +265,7 @@ body{
     margin-left: 3rem;
 }
 #girisfoto{
+    display: inline-block;
     height: 450px;
     width: 100%;
 }
